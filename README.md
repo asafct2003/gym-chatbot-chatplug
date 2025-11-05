@@ -101,16 +101,7 @@ data/leads.csv
 
 ---
 
-## 📸 Screenshots
 
-(Add your own screenshots after pushing to GitHub)
-
-Example:
-![Light Mode]([screenshots/light-mode.png](https://drive.google.com/file/d/1HoUoRukFkXDbVYRQyjSklp1HvGB3KOgO/view?usp=drive_link))  
-![Dark Mode]([screenshots/dark-mode.png](https://drive.google.com/file/d/1R3DZZ-YCgmzjNPrImBHq8GMYttl5H-o5/view?usp=drive_link))  
-![Lead Form]([screenshots/lead-form.png](https://drive.google.com/file/d/1zTE5Py3AJJnEH8KBF5JnOjwr8YQyfkk4/view?usp=drive_link))
-
----
 
 ## 🌟 Future Improvements (Optional)
 
