@@ -1,0 +1,121 @@
+:root { 
+  --blue:#3A86FF; 
+  --ink:#0F0F0F; 
+  --muted:#6B7280; 
+  --bg:#F7F8FB; 
+}
+* { box-sizing: border-box; }
+body {
+  margin:0;
+  font-family: 'Inter', sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+}
+.topbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 22px;
+  background:#fff;
+  border-bottom:1px solid #e6e8ee;
+}
+.brand { display:flex; align-items:center; gap:12px; }
+.logo {
+  width:36px; height:36px;
+  border-radius:8px;
+  background:var(--blue);
+  color:#fff;
+  display:grid; place-items:center;
+  font-size:20px;
+}
+.topbar h1 { font-size:18px; margin:0; }
+.topbar .sub { margin:0; color:var(--muted); font-size:12px; }
+.topbar .meta { display:flex; gap:16px; color:var(--muted); font-size:14px; }
+.shell {
+  display:grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap:24px;
+  padding:24px;
+  max-width:1100px;
+  margin:0 auto;
+}
+.left {
+  background:#fff;
+  border:1px solid #e6e8ee;
+  border-radius:12px;
+  padding:18px;
+}
+.right { display:flex; justify-content:center; }
+.chat {
+  width:100%; max-width:420px;
+  background:#fff;
+  border:1px solid #e6e8ee;
+  border-radius:16px;
+  display:flex; flex-direction:column;
+}
+.messages {
+  padding:14px;
+  display:flex; flex-direction:column;
+  gap:10px;
+  height:420px;
+  overflow:auto;
+  background:#fbfcff;
+}
+.msg {
+  padding:10px 12px;
+  border-radius:12px;
+  max-width:82%;
+}
+.msg.bot { background:#eef3ff; border:1px solid #dfe7ff; }
+.msg.user { background:#e9f7ee; border:1px solid #cfead8; margin-left:auto; }
+.quick {
+  display:flex; flex-wrap:wrap;
+  gap:8px;
+  padding:10px 14px;
+  border-top:1px dashed #eef;
+}
+.quick button {
+  background:#f1f6ff;
+  border:1px solid #dfe7ff;
+  color:#1f3b87;
+  padding:8px 10px;
+  border-radius:10px;
+  cursor:pointer;
+}
+.composer {
+  display:flex; gap:8px;
+  padding:10px;
+  border-top:1px solid #eef;
+}
+.composer input {
+  flex:1;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid #d5d9e3;
+}
+.composer button {
+  background:var(--blue);
+  color:#fff;
+  border:none;
+  padding:10px 14px;
+  border-radius:10px;
+  cursor:pointer;
+}
+.footer { text-align:center; padding:20px; color:var(--muted); }
+.form { display:grid; gap:8px; }
+.form input, .form select {
+  padding:10px;
+  border:1px solid #d5d9e3;
+  border-radius:10px;
+}
+.form button {
+  background:var(--blue);
+  color:#fff;
+  border:none;
+  padding:10px 12px;
+  border-radius:10px;
+  cursor:pointer;
+}
+@media(max-width:860px) {
+  .shell { grid-template-columns:1fr; }
+}

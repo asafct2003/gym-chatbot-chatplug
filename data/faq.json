@@ -1,0 +1,8 @@
+{
+  "plans": "Our plans – Monthly ₹1499, Quarterly ₹3999, Yearly ₹12,999. Student discount 10%. Personal training starts at ₹799/session.",
+  "timings": "We are open Mon–Fri 6:00 AM – 10:00 PM, Sat–Sun 7:00 AM – 9:00 PM.",
+  "location": "We are located at MG Road, Kozhikode. Parking available.",
+  "amenities": "Amenities include cardio zone, strength machines, free weights, functional area, locker rooms and showers.",
+  "personal_training": "Certified male & female trainers available. Packages: 8 / 12 / 16 sessions per month.",
+  "fallback": "I didn't catch that. Ask me about plans, timings, amenities, trainers, or type 'trial' to book a free session."
+}

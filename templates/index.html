@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ business.client }} – Chatplug.ai </title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">⚡</div> <!-- Replace with Chatplug.ai logo later -->
+      <div>
+        <h1>{{ business.client }}</h1>
+        <p class="sub"> {{ business.brand }}</p>
+      </div>
+    </div>
+    <div class="meta">
+      <span>📍 {{ business.location }}</span>
+      <span>📞 {{ business.phone }}</span>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="left">
+      <h2>What this Chatplug.ai Demo Bot can do</h2>
+      <ul class="bullets">
+        <li>Answer FAQs: plans, timings, amenities, trainers.</li>
+        <li>Book a <b>free trial</b> and collect lead details.</li>
+        <li>Store leads to a CSV file you can show clients.</li>
+        <li>Clean chat widget with your branding.</li>
+      </ul>
+      <div class="kb">
+        <h3>Quick Info</h3>
+        <p><b>Weekdays:</b> {{ business.hours.weekday }} | <b>Weekends:</b> {{ business.hours.weekend }}</p>
+      </div>
+      <div class="note">Tip: Try typing <code>plans</code>, <code>timings</code> or <code>trial</code>.</div>
+    </section>
+
+    <section class="right">
+      <div class="chat">
+        <div id="messages" class="messages"></div>
+        <div id="quick" class="quick"></div>
+        <form id="composer" class="composer">
+          <input id="input" type="text" placeholder="Type a message…" autocomplete="off" />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© <span id="year"></span> {{ business.brand }} • Demo</div>
+  </footer>
+
+  <script>
+    window.QUICK = {{ quick_replies | tojson }};
+  </script>
+  <script src="/static/script.js"></script>
+</body>
+</html>
